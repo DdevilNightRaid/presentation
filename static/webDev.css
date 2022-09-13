@@ -1,0 +1,29 @@
+body{
+    background-image:url(/imgs/webBack.png);
+}
+.lines{
+    /* margin-top:27rem; */
+    position: absolute;
+    bottom: 20px;
+    width: 120em;
+}
+.line1{
+    border: 3px solid #fff;
+    margin: 10px ;
+    height: 0.3px;
+}
+.line2{
+    padding: 10px;
+    margin: 10px ;
+    text-align: center;
+    background-color: #fff;
+}
+.line2 strong{
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+.line3{
+    border: 3px solid  #fff;
+    margin: 10px ;
+    height: 0.1px;
+}

@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'Pacifico', cursive;
+    font-family: 'Pacifico-Regular';
+    src: url("../static/fonts/pacifico/Pacifico-Regular.ttf");
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../imgs/digitization.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container1{
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    font-family: 'Pacifico-Regular', cursive;
+    /* text-decoration: underline; */
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: white;
+}
+.container2 {
+	display: block;
+	height: 166vh;
+	width: 164vh;
+	border-radius: 50%;
+	background: #5e6366;
+	position: absolute;
+	top: -153px;
+	right: -230px;
+    background-image: url("../imgs/bin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+#circle1{
+    display: block;
+    position: absolute;
+    top: 32%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    height:25%;
+    width: 25%;
+    border: 3px solid transparent;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    border-radius: 50%;
+    animation: spin 4s linear infinite;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#circle2{
+    display: block;
+    position: absolute;
+    top: 33%;
+    right: 51%;
+    transform: translate(-50%, -50%);
+    height: 23%;
+    width: 23%;
+    border: 3px solid transparent;
+    border-bottom: 3px solid red;
+    border-left: 3px solid red;
+    border-top: 3px solid red;
+    border-radius: 50%;
+    animation: spin2 3s linear infinite;
+}
+@keyframes spin2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+#circle3{
+    display: block;
+    position: absolute;
+    top: 34%;
+    right: 52%;
+    transform: translate(-50%, -50%);
+    height: 21%;
+    width: 21%;
+    border: 3px solid transparent;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    border-top: 3px solid black;
+    border-radius: 50%;
+    animation: spin3 2s linear infinite;
+}
+@keyframes spin3{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+img {
+	display: block;
+	position: absolute;
+	top: 45%;
+	right: 43%;
+	transform: translate(-50%, -50%);
+	height: 20%;
+	width: 20%;
+	border-radius: 50%;
+}
+
+/* button  */
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+.btn button{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: none;
+    background: transparent;
+}
+.btn button a{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: none;
+    background: transparent;
+}
+.btn button:hover{
+    background: #000000;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px #0b0b0b,
+                0 0 25px #0b0b0b,
+                0 0 50px #0b0b0b,
+                0 0 100px #0b0b0b;
+}
+.btn button a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.btn button span{
+    display: block;
+    position: absolute;
+}
+.btn button span:nth-child(1){
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: line1 1s linear infinite;
+}
+@keyframes line1{
+    0%{
+        left: -100%;
+    }
+    50%, 100%{
+        left: 100%;
+    }
+}
+.btn button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: line2 1s linear infinite;
+    animation-delay: .25s;
+}
+@keyframes line2{
+    0%{
+        top: -100%;
+    }
+    50%, 100%{
+        top: 100%;
+    }
+}
+.btn button span:nth-child(3){
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: line3 1s linear infinite;
+    animation-delay: .50s;
+}
+@keyframes line3{
+    0%{
+        right: -100%;
+    }
+    50%, 100%{
+        right: 100%;
+    }
+}
+.btn button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: line4 1s linear infinite;
+    animation-delay: .75s;
+}
+@keyframes line4{
+    0%{
+        bottom: -100%;
+    }
+    50%, 100%{
+        bottom: 100%;
+    }
+}
