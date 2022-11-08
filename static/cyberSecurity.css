@@ -6,7 +6,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url("../imgs/digitization.jpg");
+    background-image: url("../imgs/jpg/digitization.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -22,14 +22,16 @@ body{
 }
 .container2 {
 	display: block;
-	height: 166vh;
-	width: 164vh;
+	height: 131vh;
+	width: 132vh;
+	/* height: 166vh;
+	width: 164vh; */
 	border-radius: 50%;
 	background: #5e6366;
 	position: absolute;
 	top: -153px;
 	right: -230px;
-    background-image: url("../imgs/bin.jpg");
+    background-image: url("../imgs/jpg/bin.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -122,8 +124,10 @@ img {
     margin-top: 40px;
     margin-bottom: 40px;
     position: absolute;
-    right: 20px;
-    bottom: 10px;
+    right: 19rem;
+    bottom: 9rem;
+    /* right: 20px;
+    bottom: 10px; */
 }
 .btn button{
     position: relative;
